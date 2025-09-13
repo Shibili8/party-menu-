@@ -1,0 +1,122 @@
+.filters {
+  padding: 10px;
+  background: #fafafa;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 4px 8px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 6px;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.categories {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.category-btn{
+    font-size: 10px;
+}
+.categories button {
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.categories button.active {
+  background: #ff7a00;
+  color: white;
+  border-color: #ff7a00;
+}
+.cuisine-toggle-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cuisine-head {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* 🌱 Toggle Switch Buttons */
+.diet-toggle {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.switch {
+  width: 46px;
+  height: 24px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  border: 2px solid #ddd;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.switch .dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 2px solid currentColor;
+  transition: all 0.3s ease;
+}
+
+/* Veg Switch */
+.switch.veg {
+  border-color: green;
+  
+  color: green;
+}
+.switch.veg.active {
+  background: #e8fbe8;
+}
+.switch.veg.active .dot {
+  left: 24px; /* move right */
+  background: green;
+}
+
+/* Non-Veg Switch */
+.switch.non-veg {
+  border-color: red;
+  color: red;
+}
+.switch.non-veg.active {
+  background: #fdeaea;
+}
+.switch.non-veg.active .dot {
+  left: 24px; /* move right */
+  background: red;
+}

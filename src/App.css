@@ -1,0 +1,218 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 900px;
+  
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Footer */
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff6ed;
+  border-top: 1px solid #ddd;
+  padding: 7px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  
+}
+
+footer h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+.footer-text-container{
+  display: flex;
+  width: 100% !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 45px 10px 10px !important;
+}
+.next-btn{
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.continue-btn {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  width: 100%;
+}
+
+.continue-btn:hover {
+  background-color: #333;
+}
+
+/* Modal Styles (Ingredient + Read More Popup) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1000;
+  height: 100vh;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 40vh;
+  
+  position: relative;
+}
+
+.modal-img {
+  width: 100%;
+  height: 150px !important;
+  border-radius: 8px;
+  object-fit: fill;
+  margin-bottom: 5px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  
+}
+.dish-heading-modal {
+    display: flex;
+    align-items: center;
+}
+.dot-container{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+.veg-container{
+    border: 1px solid green;
+}
+.non-veg-container{
+    border: 1px solid red;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.veg {
+  background-color: green;
+  
+}
+
+.dot.non-veg {
+  background-color: red;
+  
+}
+
+.modal-dish-button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-heading{
+  margin: 5px 0px !important;
+}
+.modal-description{
+  margin: 5px 0px !important;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}

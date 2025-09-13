@@ -1,0 +1,134 @@
+.dish-card {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.dish-img {
+  width: 100px;
+  height: 100px;
+  object-fit: fill;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.dish-info {
+  flex: 1;
+}
+
+.dish-info h3 {
+  margin: 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dish-info p {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 6px 0;
+}
+.dish-heading{
+    display: flex;
+    align-items: center;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #ff7a00;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-left: 4px;
+}
+
+.ingredient-btn {
+  background: none;
+  border: none;
+  color: #ff7a00;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.ingredient-pic{
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+    
+}
+.ingredient{
+    font-size: 15px !important;
+    color: #ff7a00 !important;
+}
+
+.dish-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.add-btn {
+  background: #f2f2f2;
+  color: #28a745;
+  position: sticky;
+  border-radius: 0px 0px 8px 8px;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  width: 100%;
+}
+
+.remove-btn {
+  background: #f2f2f2;
+  color: #dc3545;
+  position: relative;
+  border-radius: 0px 0px 8px 8px;
+  border: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 6px 12px;
+  width: 100%;
+}
+
+/* Veg/Non-Veg dots */
+.dot-container{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+.veg-container{
+    border: 1px solid green;
+}
+.non-veg-container{
+    border: 1px solid red;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.veg {
+  background-color: green;
+  
+}
+
+.dot.non-veg {
+  background-color: red;
+  
+}
