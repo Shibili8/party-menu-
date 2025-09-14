@@ -1,4 +1,3 @@
-import React from "react";
 import DishCard from "../DishCard";
 import './index.css'
 const DishList = ({

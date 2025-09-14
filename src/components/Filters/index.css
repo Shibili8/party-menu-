@@ -61,7 +61,7 @@
   font-weight: 600;
 }
 
-/* 🌱 Toggle Switch Buttons */
+
 .diet-toggle {
   display: flex;
   gap: 12px;
@@ -94,7 +94,7 @@
   transition: all 0.3s ease;
 }
 
-/* Veg Switch */
+
 .switch.veg {
   border-color: green;
   
@@ -104,11 +104,11 @@
   background: #e8fbe8;
 }
 .switch.veg.active .dot {
-  left: 24px; /* move right */
+  left: 24px; 
   background: green;
 }
 
-/* Non-Veg Switch */
+
 .switch.non-veg {
   border-color: red;
   color: red;
@@ -117,6 +117,6 @@
   background: #fdeaea;
 }
 .switch.non-veg.active .dot {
-  left: 24px; /* move right */
+  left: 24px; 
   background: red;
 }

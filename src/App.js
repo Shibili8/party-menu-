@@ -10,24 +10,24 @@ const App = () => {
   const [selectedCategory, setSelectedCategory] = useState("MAIN COURSE");
   const [searchTerm, setSearchTerm] = useState("");
   const [dietFilter, setDietFilter] = useState(null);
-  const [selectedDishes, setSelectedDishes] = useState([]); // stores only IDs
+  const [selectedDishes, setSelectedDishes] = useState([]); 
 
   const [isIngredientOpen, setIsIngredientOpen] = useState(false);
   const [isDetailOpen, setIsDetailOpen] = useState(false);
   const [currentDish, setCurrentDish] = useState(null);
 
-  // dish counts for categories
+  
   const dishCounts = dishes.reduce((acc, dish) => {
     acc[dish.mealType] = (acc[dish.mealType] || 0) + 1;
     return acc;
   }, {});
 
-  // derive selected dish objects (so we can access mealType inside Filters)
+  
   const selectedDishObjects = dishes.filter((d) =>
     selectedDishes.includes(d.id)
   );
 
-  // filter logic
+
   const filteredDishes = dishes.filter((dish) => {
     const matchesCategory = dish.mealType === selectedCategory;
     const matchesSearch = dish.name
@@ -43,7 +43,7 @@ const App = () => {
     return matchesCategory && matchesSearch && matchesDiet;
   });
 
-  // handlers
+  
   const handleAddDish = (id) => {
     if (!selectedDishes.includes(id)) {
       setSelectedDishes([...selectedDishes, id]);
@@ -82,7 +82,7 @@ const App = () => {
             dietFilter={dietFilter}
             setDietFilter={setDietFilter}
             dishCounts={dishCounts}
-            selectedDishes={selectedDishObjects} // ✅ full dish objects
+            selectedDishes={selectedDishObjects}
           />
 
           <DishList
@@ -94,9 +94,9 @@ const App = () => {
             onViewMore={handleViewMore}
           />
 
-          {/* Detail Modal */}
+          
           {isDetailOpen && currentDish && (
-            <div className="modal-overlay detail-modal">
+            <div className="modal-overlay">
               <div className="modal-content">
                 <button
                   className="close-btn"
@@ -144,13 +144,14 @@ const App = () => {
                     )}
                   </div>
                 </div>
-
-                <p className="modal-description">{currentDish.description}</p>
+                    {console.log(currentDish)}
+                <p className="modal-description"><span className="cuisine-head">{currentDish.cuisine}: </span>{currentDish.description}</p>
                 <button
                   className="ingredient-btn"
                   onClick={() => handleViewIngredients(currentDish)}
                 >
-                  🍲 Ingredient
+                  <img className="ingredient-pic" alt="ingredient" src="https://res.cloudinary.com/da4a06plx/image/upload/v1757746481/Group_1_cuzof1.png"/>
+          <p className="ingredient">Ingredient</p>
                 </button>
               </div>
             </div>

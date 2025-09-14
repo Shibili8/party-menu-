@@ -37,7 +37,7 @@ const Filters = ({
 
   return (
     <div className="filters">
-      {/* 🔍 Search */}
+      
       <div className="search-bar">
         <input
           type="text"
@@ -50,7 +50,7 @@ const Filters = ({
         </button>
       </div>
 
-      {/* 🍽️ Categories */}
+      
       <div className="categories">
         {categories.map((cat) => (
           <button
@@ -63,7 +63,7 @@ const Filters = ({
         ))}
       </div>
 
-      {/* ✅ Selected Count */}
+      
       <div className="cuisine-toggle-btn-container">
         <h3 className="cuisine-head">
           {activeCategory} Selected (
@@ -90,7 +90,7 @@ const Filters = ({
         </div>
       </div>
 
-      {/* 🌱 Veg / Non-Veg Toggle Switch */}
+      
       
     </div>
   );
