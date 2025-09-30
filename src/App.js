@@ -145,8 +145,10 @@ const App = () => {
                   </div>
                 </div>
                     {console.log(currentDish)}
-                <p className="modal-description"><span className="cuisine-head">{currentDish.category.name}: </span>{currentDish.description}</p>
+                    {console.log(currentDish.category["name"])}
+                <p className="modal-description"><span className="cuisine-head">{currentDish.category["name"]}: </span>{currentDish.description}</p>
                 <button
+                
                   className="ingredient-btn"
                   onClick={() => handleViewIngredients(currentDish)}
                 >
