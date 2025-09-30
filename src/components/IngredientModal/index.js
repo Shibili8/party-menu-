@@ -21,7 +21,7 @@ const IngredientModal = ({ dish, isOpen, onClose }) => {
         <h3 className="ingredient-sub-heading">Ingredients</h3>
         <p className="serve-count"> {"for "} {dish.serves} {" people"}</p>
         <ul className="ingredient-list-container">
-          {dish.ingredients.map((ing, i) => (
+          {dish.ingredientList.map((ing, i) => (
             <li key={i} className="list-items">
                 <p>{ing.name}</p>
                 <p>{ing.quantity}</p>

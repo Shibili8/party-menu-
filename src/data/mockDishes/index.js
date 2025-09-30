@@ -6,13 +6,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757684401/1_azhqaj.jpg",
     mealType: "MAIN COURSE",
     type: "NON-VEG",
-    cuisine: "North Indian",
+    category: { id: 1, name: "North Indian", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 3,
-    ingredients: [
+    ingredientList: [
       { name: "Chicken", quantity: "500g" },
       { name: "Yogurt", quantity: "1 cup" },
-      { name: "Spices", quantity: "2 tbsp" },
-    ],
+      { name: "Spices", quantity: "2 tbsp" }
+    ]
   },
   {
     id: 2,
@@ -21,13 +26,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757684304/2_z0moaf.jpg",
     mealType: "MAIN COURSE",
     type: "VEG",
-    cuisine: "North Indian",
+    category: { id: 2, name: "North Indian", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 4,
-    ingredients: [
+    ingredientList: [
       { name: "Black Lentils", quantity: "1 cup" },
       { name: "Butter", quantity: "50g" },
-      { name: "Cream", quantity: "1/2 cup" },
-    ],
+      { name: "Cream", quantity: "1/2 cup" }
+    ]
   },
   {
     id: 3,
@@ -36,12 +46,17 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757684336/3_f3iirq.jpg",
     mealType: "DESSERT",
     type: "VEG",
-    cuisine: "North Indian",
+    category: { id: 3, name: "North Indian", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 5,
-    ingredients: [
+    ingredientList: [
       { name: "Milk Powder", quantity: "1 cup" },
-      { name: "Sugar Syrup", quantity: "2 cups" },
-    ],
+      { name: "Sugar Syrup", quantity: "2 cups" }
+    ]
   },
   {
     id: 4,
@@ -50,13 +65,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757684320/4_pulfa1.jpg",
     mealType: "STARTER",
     type: "VEG",
-    cuisine: "North Indian",
+    category: { id: 4, name: "North Indian", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 2,
-    ingredients: [
+    ingredientList: [
       { name: "Paneer", quantity: "250g" },
       { name: "Yogurt", quantity: "1/2 cup" },
-      { name: "Spices", quantity: "1 tbsp" },
-    ],
+      { name: "Spices", quantity: "1 tbsp" }
+    ]
   },
   {
     id: 5,
@@ -65,13 +85,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682724/5_vbettp.jpg",
     mealType: "MAIN COURSE",
     type: "VEG",
-    cuisine: "South Indian",
+    category: { id: 5, name: "South Indian", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 2,
-    ingredients: [
+    ingredientList: [
       { name: "Rice", quantity: "1 cup" },
       { name: "Potatoes", quantity: "2" },
-      { name: "Spices", quantity: "2 tsp" },
-    ],
+      { name: "Spices", quantity: "2 tsp" }
+    ]
   },
   {
     id: 6,
@@ -80,13 +105,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682703/6_wxci0x.jpg",
     mealType: "MAIN COURSE",
     type: "NON-VEG",
-    cuisine: "Hyderabadi",
+    category: { id: 6, name: "Hyderabadi", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 5,
-    ingredients: [
+    ingredientList: [
       { name: "Chicken", quantity: "500g" },
       { name: "Basmati Rice", quantity: "2 cups" },
-      { name: "Spices", quantity: "2 tbsp" },
-    ],
+      { name: "Spices", quantity: "2 tbsp" }
+    ]
   },
   {
     id: 7,
@@ -95,13 +125,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757684379/7_u7vpmu.jpg",
     mealType: "MAIN COURSE",
     type: "VEG",
-    cuisine: "Chinese",
+    category: { id: 7, name: "Chinese", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 3,
-    ingredients: [
+    ingredientList: [
       { name: "Cabbage", quantity: "1 cup" },
       { name: "Carrot", quantity: "1 cup" },
-      { name: "Flour", quantity: "1/2 cup" },
-    ],
+      { name: "Flour", quantity: "1/2 cup" }
+    ]
   },
   {
     id: 8,
@@ -110,13 +145,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682727/8_mvyfqk.jpg",
     mealType: "STARTER",
     type: "VEG",
-    cuisine: "Chinese",
+    category: { id: 8, name: "Chinese", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 2,
-    ingredients: [
+    ingredientList: [
       { name: "Cabbage", quantity: "1 cup" },
       { name: "Carrot", quantity: "1 cup" },
-      { name: "Spring Roll Wrappers", quantity: "10" },
-    ],
+      { name: "Spring Roll Wrappers", quantity: "10" }
+    ]
   },
   {
     id: 9,
@@ -125,13 +165,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757684367/9_ssk21v.jpg",
     mealType: "DESSERT",
     type: "VEG",
-    cuisine: "Continental",
+    category: { id: 9, name: "Continental", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 4,
-    ingredients: [
+    ingredientList: [
       { name: "Chocolate", quantity: "200g" },
       { name: "Flour", quantity: "1 cup" },
-      { name: "Butter", quantity: "100g" },
-    ],
+      { name: "Butter", quantity: "100g" }
+    ]
   },
   {
     id: 10,
@@ -140,13 +185,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682739/10_gfeyru.jpg",
     mealType: "SIDE",
     type: "VEG",
-    cuisine: "Continental",
+    category: { id: 10, name: "Continental", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 2,
-    ingredients: [
+    ingredientList: [
       { name: "Potatoes", quantity: "3" },
       { name: "Salt", quantity: "1 tsp" },
-      { name: "Oil", quantity: "for frying" },
-    ],
+      { name: "Oil", quantity: "for frying" }
+    ]
   },
   {
     id: 11,
@@ -155,13 +205,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682658/11_z3e4uu.jpg",
     mealType: "MAIN COURSE",
     type: "VEG",
-    cuisine: "Mumbai Street Food",
+    category: { id: 11, name: "Mumbai Street Food", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 4,
-    ingredients: [
+    ingredientList: [
       { name: "Mixed Vegetables", quantity: "2 cups" },
       { name: "Pav", quantity: "4" },
-      { name: "Butter", quantity: "50g" },
-    ],
+      { name: "Butter", quantity: "50g" }
+    ]
   },
   {
     id: 12,
@@ -170,13 +225,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682674/12_ohqtxh.jpg",
     mealType: "MAIN COURSE",
     type: "NON-VEG",
-    cuisine: "South Indian",
+    category: { id: 12, name: "South Indian", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 3,
-    ingredients: [
+    ingredientList: [
       { name: "Fish", quantity: "500g" },
       { name: "Coconut Milk", quantity: "1 cup" },
-      { name: "Spices", quantity: "2 tbsp" },
-    ],
+      { name: "Spices", quantity: "2 tbsp" }
+    ]
   },
   {
     id: 13,
@@ -185,13 +245,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682669/13_alq6gv.jpg",
     mealType: "DESSERT",
     type: "VEG",
-    cuisine: "Continental",
+    category: { id: 13, name: "Continental", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 6,
-    ingredients: [
+    ingredientList: [
       { name: "Cream Cheese", quantity: "200g" },
       { name: "Biscuit Base", quantity: "100g" },
-      { name: "Sugar", quantity: "1/2 cup" },
-    ],
+      { name: "Sugar", quantity: "1/2 cup" }
+    ]
   },
   {
     id: 14,
@@ -200,13 +265,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682676/14_vektwb.jpg",
     mealType: "STARTER",
     type: "NON-VEG",
-    cuisine: "Chinese",
+    category: { id: 14, name: "Chinese", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 2,
-    ingredients: [
+    ingredientList: [
       { name: "Chicken", quantity: "300g" },
       { name: "Chilli Sauce", quantity: "2 tbsp" },
-      { name: "Soy Sauce", quantity: "1 tbsp" },
-    ],
+      { name: "Soy Sauce", quantity: "1 tbsp" }
+    ]
   },
   {
     id: 15,
@@ -215,12 +285,17 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682615/15_kosrzt.jpg",
     mealType: "DESSERT",
     type: "VEG",
-    cuisine: "Bengali",
+    category: { id: 15, name: "Bengali", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 5,
-    ingredients: [
+    ingredientList: [
       { name: "Chenna", quantity: "1 cup" },
-      { name: "Sugar Syrup", quantity: "2 cups" },
-    ],
+      { name: "Sugar Syrup", quantity: "2 cups" }
+    ]
   },
   {
     id: 16,
@@ -229,13 +304,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682724/16_ulcxbr.jpg",
     mealType: "MAIN COURSE",
     type: "VEG",
-    cuisine: "North Indian",
+    category: { id: 16, name: "North Indian", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 3,
-    ingredients: [
+    ingredientList: [
       { name: "Potatoes", quantity: "2" },
       { name: "Cauliflower", quantity: "1 cup" },
-      { name: "Spices", quantity: "2 tsp" },
-    ],
+      { name: "Spices", quantity: "2 tsp" }
+    ]
   },
   {
     id: 17,
@@ -244,13 +324,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682583/17_qezh5o.jpg",
     mealType: "SIDE",
     type: "VEG",
-    cuisine: "North Indian",
+    category: { id: 17, name: "North Indian", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 2,
-    ingredients: [
+    ingredientList: [
       { name: "Flour", quantity: "2 cups" },
       { name: "Butter", quantity: "30g" },
-      { name: "Yeast", quantity: "1 tsp" },
-    ],
+      { name: "Yeast", quantity: "1 tsp" }
+    ]
   },
   {
     id: 18,
@@ -259,13 +344,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682600/18_ehn545.jpg",
     mealType: "STARTER",
     type: "NON-VEG",
-    cuisine: "Japanese",
+    category: { id: 18, name: "Japanese", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 2,
-    ingredients: [
+    ingredientList: [
       { name: "Prawns", quantity: "200g" },
       { name: "Tempura Batter", quantity: "1 cup" },
-      { name: "Oil", quantity: "for frying" },
-    ],
+      { name: "Oil", quantity: "for frying" }
+    ]
   },
   {
     id: 19,
@@ -274,13 +364,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757684321/19_hgbnol.jpg",
     mealType: "MAIN COURSE",
     type: "VEG",
-    cuisine: "Chinese",
+    category: { id: 19, name: "Chinese", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 4,
-    ingredients: [
+    ingredientList: [
       { name: "Rice", quantity: "2 cups" },
       { name: "Mixed Vegetables", quantity: "1 cup" },
-      { name: "Soy Sauce", quantity: "2 tbsp" },
-    ],
+      { name: "Soy Sauce", quantity: "2 tbsp" }
+    ]
   },
   {
     id: 20,
@@ -289,13 +384,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757684299/20_it1blq.jpg",
     mealType: "DESSERT",
     type: "VEG",
-    cuisine: "Continental",
+    category: { id: 20, name: "Continental", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 2,
-    ingredients: [
+    ingredientList: [
       { name: "Ice Cream", quantity: "2 scoops" },
       { name: "Chocolate Sauce", quantity: "2 tbsp" },
-      { name: "Nuts", quantity: "1 tbsp" },
-    ],
+      { name: "Nuts", quantity: "1 tbsp" }
+    ]
   },
   {
     id: 21,
@@ -304,13 +404,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682561/21_byc6jo.jpg",
     mealType: "STARTER",
     type: "VEG",
-    cuisine: "Tibetan",
+    category: { id: 21, name: "Tibetan", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 3,
-    ingredients: [
+    ingredientList: [
       { name: "Flour", quantity: "2 cups" },
       { name: "Vegetables", quantity: "1 cup" },
-      { name: "Spices", quantity: "1 tsp" },
-    ],
+      { name: "Spices", quantity: "1 tsp" }
+    ]
   },
   {
     id: 22,
@@ -319,13 +424,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757684377/22_qwaxdc.jpg",
     mealType: "MAIN COURSE",
     type: "NON-VEG",
-    cuisine: "Middle Eastern",
+    category: { id: 22, name: "Middle Eastern", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 2,
-    ingredients: [
+    ingredientList: [
       { name: "Chicken", quantity: "300g" },
       { name: "Tortilla", quantity: "2" },
-      { name: "Garlic Sauce", quantity: "2 tbsp" },
-    ],
+      { name: "Garlic Sauce", quantity: "2 tbsp" }
+    ]
   },
   {
     id: 23,
@@ -334,13 +444,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757684383/23_k4ebkl.jpg",
     mealType: "SIDE",
     type: "VEG",
-    cuisine: "Continental",
+    category: { id: 23, name: "Continental", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 2,
-    ingredients: [
+    ingredientList: [
       { name: "Lettuce", quantity: "1 cup" },
       { name: "Croutons", quantity: "1/2 cup" },
-      { name: "Caesar Dressing", quantity: "2 tbsp" },
-    ],
+      { name: "Caesar Dressing", quantity: "2 tbsp" }
+    ]
   },
   {
     id: 24,
@@ -349,13 +464,18 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682653/24_vmdlii.jpg",
     mealType: "STARTER",
     type: "VEG",
-    cuisine: "South Indian",
+    category: { id: 24, name: "South Indian", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 3,
-    ingredients: [
+    ingredientList: [
       { name: "Rice", quantity: "1 cup" },
       { name: "Urad Dal", quantity: "1/2 cup" },
-      { name: "Water", quantity: "as needed" },
-    ],
+      { name: "Water", quantity: "as needed" }
+    ]
   },
   {
     id: 25,
@@ -364,12 +484,17 @@ export const dishes = [
     image: "https://res.cloudinary.com/da4a06plx/image/upload/v1757682614/25_ukevq0.jpg",
     mealType: "DESSERT",
     type: "VEG",
-    cuisine: "Continental",
+    category: { id: 25, name: "Continental", image: "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png", isRecommendedForMealSuggestion: true },
+    dishType: "CURRY",
+    forChefit: true,
+    forParty: true,
+    nameHi: "",
+    nameBn: "",
     serves: 4,
-    ingredients: [
+    ingredientList: [
       { name: "Lemon", quantity: "2" },
       { name: "Sugar", quantity: "1/2 cup" },
-      { name: "Flour", quantity: "1 cup" },
-    ],
-  },
+      { name: "Flour", quantity: "1 cup" }
+    ]
+  }
 ];
